@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GitHub Repository Viewer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>GitHub Repository Viewer</h1>
+    <form id="repoForm">
+      <input
+        type="text"
+        id="repoInput"
+        placeholder="Enter repository (owner/repo)"
+        required
+      />
+      <button type="submit">Get Info</button>
+    </form>
+
+    <div id="repoInfo" class="hidden">
+      <h2 id="repoName"></h2>
+      <p id="repoDescription"></p>
+      <p><strong>Stars:</strong> <span id="repoStars"></span></p>
+      <p><strong>Forks:</strong> <span id="repoForks"></span></p>
+      <button id="loadCommitsBtn">Load Latest Commits</button>
+
+      <ul id="commitsList"></ul>
+    </div>
+
+    <div id="errorMsg" class="error hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
