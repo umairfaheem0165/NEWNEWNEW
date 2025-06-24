@@ -1,37 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GitHub Repository Viewer</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>GitHub Repository Viewer</h1>
-    <form id="repoForm">
-      <input
-        type="text"
-        id="repoInput"
-        placeholder="Enter repository (owner/repo)"
-        required
-      />
-      <button type="submit">Get Info</button>
-    </form>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Amazing Product</h1>
+            <p>Your solution for a better future. Join us today and experience the difference.</p>
+            <button id="cta-button">Get Started</button>
+        </div>
+    </header>
 
-    <div id="repoInfo" class="hidden">
-      <h2 id="repoName"></h2>
-      <p id="repoDescription"></p>
-      <p><strong>Stars:</strong> <span id="repoStars"></span></p>
-      <p><strong>Forks:</strong> <span id="repoForks"></span></p>
-      <button id="loadCommitsBtn">Load Latest Commits</button>
-
-      <ul id="commitsList"></ul>
-    </div>
-
-    <div id="errorMsg" class="error hidden"></div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
+    <section class="features">
+        <div class="feature">
+            <h2>Feature One</h2>
+            <p>Description of the first feature goes here.</p>
+        </div>
+        <div class="feature">
+            <h2>Feature Two</h2>
+            <p>Description of the second feature goes here.</p>
+        </div
